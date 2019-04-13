@@ -46,6 +46,10 @@ class QuotesProvider extends Component {
 const QuoteBox = (props) => {
 
   const { getQuote, quote } = useContext(QuoteContext);
+
+  const handleQuote = () => {
+    getQuote();
+  }
   
   useEffect(() => {
     console.log(quote)
@@ -57,18 +61,19 @@ const QuoteBox = (props) => {
       <div id="quote-box">
         <div className="quote-text">
           <p id="text">
-          {quote.quoteText}
+          "{quote.quoteText}"
           </p>
 
         </div>
         <div className="quote-author">
           <span id="author">
-            {quote.quoteAuthor}
+            - {quote.quoteAuthor}
           </span>
 
         </div>
         <div className="buttons">
-
+          <button type="button" className="btn btn-primary">Tweet</button>
+          <button type="button" className="btn btn-primary"  onClick={handleQuote}>New Quote</button>
         </div>
       </div>
     </div>

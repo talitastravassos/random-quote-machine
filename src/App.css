@@ -2,6 +2,32 @@
   text-align: center;
 }
 
+.wrapper {
+  flex: 1 0 auto;
+  /*make the content div flex so that the form can take the center alignment from flexbox properties. 
+  Add the centering here and avoid the margin: auto property */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#quote-box {
+  width: 450px;
+  background-color: aliceblue;
+  height: auto;
+  padding: 40px 50px;
+  border-radius: 10px;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
