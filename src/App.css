@@ -1,11 +1,17 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
+
+body {
+  background-color: #333;
+  color: #333;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
 
 .wrapper {
   flex: 1 0 auto;
-  /*make the content div flex so that the form can take the center alignment from flexbox properties. 
-  Add the centering here and avoid the margin: auto property */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,3 +61,9 @@
   color: white;
 }
 
+@media (max-width: 450px) {
+  #quote-box {
+    width: 90%;
+    margin: 10px;
+  }
+}
