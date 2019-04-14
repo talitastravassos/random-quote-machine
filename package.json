@@ -2,6 +2,7 @@
   "name": "random-quote-machine",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://talitastravassos.github.io/random-quote-machine/",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "react": "^16.8.6",
@@ -11,6 +12,8 @@
     "whatwg-fetch": "^3.0.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",    
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -24,5 +27,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
