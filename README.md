@@ -4,4 +4,5 @@
 
 Project part of FreeCodeCamp: Front End Libraries Certification 
 
-### Live demo: https://codepen.io/talitastravassos/full/LvjaQK
+### codepen: https://codepen.io/talitastravassos/full/LvjaQK
+### Live Demo: https://tst-random-quote.netlify.com/
