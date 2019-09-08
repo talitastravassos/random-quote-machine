@@ -2,7 +2,7 @@
   "name": "random-quote-machine",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://talitastravassos.github.io/random-quote-machine/",
+  "homepage": ".",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "react": "^16.8.6",
